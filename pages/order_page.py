@@ -30,8 +30,6 @@ class OrderPage(BasePage):
         self.wait_for_element(OrderPageLocators.TITLE_PAGE_ABOUT_RENT)
         self.click_on_element(OrderPageLocators.INPUT_WHEN_BRING)
         self.send_keys_to_input(OrderPageLocators.INPUT_WHEN_BRING, date)
-        #self.click_on_element(OrderPageLocators.CALENDAR)
-        #self.send_keys_to_input(OrderPageLocators.CALENDAR_ELEMENT, date)
         self.click_on_element(OrderPageLocators.CHECKBOX_COLOR_SCOOTER_BLACK)
         self.click_on_element(OrderPageLocators.INPUT_RENTAL_PERIOD)
         self.click_on_element(OrderPageLocators.DROPDOWN_LIST_RENTAL_PERIOD)

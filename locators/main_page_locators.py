@@ -3,8 +3,8 @@ from selenium.webdriver.common.by import By
 
 class MainPageLocators:
     # Кнопки "Заказать" на главной странице
-    ORDER_BUTTON_MAIN = (By.XPATH, "(.//button[text()='Заказать'])[1]")
-    ORDER_BUTTON_MAIN_BELOW = (By.XPATH, "(.//button[text()='Заказать'])[2]")
+    ORDER_BUTTON_MAIN =  (By.XPATH, ".//div[@class = 'Header_Nav__AGCXC']/button[text() = 'Заказать']")
+    ORDER_BUTTON_MAIN_BELOW = (By.XPATH, ".//div[contains(@class, 'Home_FinishButton')]/button")
 
 # Элемент "Вопросы о важном" important questions
     IMPORTANT_QUESTIONS = (By.XPATH, ".//div[text()='Вопросы о важном']")
